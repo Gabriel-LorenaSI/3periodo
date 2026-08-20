@@ -1,0 +1,5 @@
+getElementById é uma função por que precisa de parâmetos 
+    - papel dela é buscar elemeentos 
+
+Retagunlo = Atributo 
+Quadrado  = função

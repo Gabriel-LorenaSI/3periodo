@@ -1,0 +1,9 @@
+Estratégias de Branch - ao invés de uma unica branch, ter uma branch main e uma branch develop 
+   
+    MAIN - Versão pronta
+
+    DEVELOP - Feature branch 
+        Pull request (Ver quem vai revisar)
+        Merge em develop
+
+Azure DevOps
