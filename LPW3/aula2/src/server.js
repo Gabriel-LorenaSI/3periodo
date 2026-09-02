@@ -29,3 +29,4 @@ app.get('/api/v2/pokemon/:name', (req, res)=>{ // /:name = Colocar o que o usuá
 app.listen(3000, ()=>{
     console.log("Servidor ativo na porta 3000")
 })
+
