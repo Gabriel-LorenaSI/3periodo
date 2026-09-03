@@ -1,0 +1,22 @@
+[
+{
+    "id": 1,
+    "nome": "Minecraft",
+    "Plataforma": ["pc", "xboxone", "ps5"],
+    "Preço": "99,90"
+},
+
+{
+    "id": 2,
+    "nome": "Valorant",
+    "Plataforma": ["pc", "xboxone", "ps5"],
+    "Preço": "10,90"
+},
+{
+    "id": 3,
+    "nome": "GTA 6",
+    "Plataforma": ["pc", "xboxone", "ps5"],
+    "Preço": "600,90" 
+}    
+]
+
