@@ -49,8 +49,25 @@ Explique com suas palavras a função da Camada de Transporte (Camada 4) e difer
         - É um protocolo de comunicação da camada de transporte usado em rede de compuadores para transferir dados de forma rápida.
 
 O que são PDUs (Protocol Data Units) e como elas mudam de nome da camada de Transporte para a camada de Enlace?
-- R: 
+- R: PDUs é um termo ultilizado em redes e telecomunicações para se referir à unidade de dados transmitida entre entidades de rede. Pelo processo de encapsulamento, ela vai mudando de nome a cada camada. Na de transporte ela se chama segmento, camada de rede se chama pacote e na camada de enlace se chama quadro.
 
     O que é PDU?
         - É um termo usado em redes e telecomunicações para se referir à unidade de dados transmitida entre entidades de rede
+
+Um pacote IP viaja pela rede carregando endereços lógicos. O que acontece com o endereço MAC de origem e destino a cada salto (roteador) que o pacote atravessa?
+- R: O endereço MAC de origem é substituido pelo MAC da interface de saída do roteador atual que está enviando o pacote.
+
+    Endereço lógico - É uma referência de memória gerada pela CPU enquanto um programa está em execução, representando a localização dos dados na perspectiva do processo e não no hardware real.
+        Como funciona: 
+            Geração - A CPU cria o endereço lógico qunado executa as intruções de um programa
+            Tradução - Um componente de hardware chamado MMU (Unidade de Gereciamento de memória) converte esse endereço virtual em um endereço físico na memória RAM 
+            Abstração - O programa acredita que possui um espaço de memória contínuo e exclusivo, sem precisar saber onde os dados estão guardados de verdade no computador.
+    
+    Endereço MAC (Média Acess Control ) - É um indetificador físico único gravado na placa de rede de um   dispositivo hardware 
+    
+    O que acontece com cada salto?
+        - Endereço MAC de origem é substituido pelo MAC da interface de saída do roteador atual que está enviando o pacote 
+        Endereço MAC de destino é substituido pelo MAC do próximo equipamento na rede
+        Endereço IP NÃO sofre alteração
+
 
