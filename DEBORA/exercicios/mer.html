@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MER - Campeonato Esportivo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            margin: 0;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .legend {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 40px;
+            font-size: 0.9em;
+            background: #fff;
+            padding: 10px 20px;
+            border-radius: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .legend span.pk-legenda { color: #e74c3c; font-weight: bold; }
+        .legend span.fk-legenda { color: #3498db; font-weight: bold; }
+
+        .mer-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            max-width: 1000px;
+        }
+
+        .entity {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 260px;
+            overflow: hidden;
+            border: 1px solid #e1e4e8;
+        }
+
+        .entity-header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 12px 15px;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        .attribute {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 15px;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 0.95em;
+        }
+
+        .attribute:last-child {
+            border-bottom: none;
+        }
+
+        .attr-name {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .type {
+            color: #95a5a6;
+            font-size: 0.85em;
+        }
+
+        /* Indicadores de Chave */
+        .pk {
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 0.8em;
+        }
+
+        .fk {
+            color: #3498db;
+            font-weight: bold;
+            font-size: 0.8em;
+        }
+        
+        .attr-text.pk-text { color: #c0392b; font-weight: 600; }
+        .attr-text.fk-text { color: #2980b9; font-weight: 600; }
+
+    </style>
+</head>
+<body>
+
+    <h1>MER: Campeonato Esportivo</h1>
+    
+    <div class="legend">
+        <span><span class="pk-legenda">PK</span> = Chave Primária</span>
+        <span><span class="fk-legenda">FK</span> = Chave Estrangeira</span>
+    </div>
+
+    <div class="mer-container">
+        
+        <!-- Tabela EQUIPE -->
+        <div class="entity">
+            <div class="entity-header">EQUIPE</div>
+            <div class="attribute">
+                <span class="attr-name"><span class="pk">PK</span> <span class="attr-text pk-text">ID_Equipe</span></span>
+                <span class="type">INT</span>
+            </div>
+            <div class="attribute">
+                <span class="attr-name">Nome</span>
+                <span class="type">VARCHAR</span>
+            </div>
+            <div class="attribute">
+                <span class="attr-name">Categoria</span>
+                <span class="type">VARCHAR</span>
+            </div>
+        </div>
+
+        <!-- Tabela JOGADOR -->
+        <div class="entity">
+            <div class="entity-header">JOGADOR</div>
+            <div class="attribute">
+                <span class="attr-name"><span class="pk">PK</span> <span class="attr-text pk-text">ID_Jogador</span></span>
+                <span class="type">INT</span>
+            </div>
+            <div class="attribute">
+                <span class="attr-name">Nome</span>
+                <span class="type">VARCHAR</span>
+            </div>
+            <div class="attribute">
+                <span class="attr-name">Data_Nascimento</span>
+                <span class="type">DATE</span>
+            </div>
+            <div class="attribute">
+                <span class="attr-name">Numero_Camisa</span>
+                <span class="type">INT</span>
+            </div>
+            <div class="attribute" style="background-color: #f4f9fc;">
+                <span class="attr-name"><span class="fk">FK</span> <span class="attr-text fk-text">ID_Equipe</span></span>
+                <span class="type">INT</span>
+            </div>
+        </div>
+
+        <!-- Tabela ESTADIO -->
+        <div class="entity">
+            <div class="entity-header">ESTÁDIO</div>
+            <div class="attribute">
+                <span class="attr-name"><span class="pk">PK</span> <span class="attr-text pk-text">ID_Estadio</span></span>
+                <span class="type">INT</span>
+            </div>
+            <div class="attribute">
+                <span class="attr-name">Nome</span>
+                <span class="type">VARCHAR</span>
+            </div>
+            <div class="attribute">
+                <span class="attr-name">Localizacao</span>
+                <span class="type">VARCHAR</span>
+            </div>
+            <div class="attribute">
+                <span class="attr-name">Capacidade</span>
+                <span class="type">INT</span>
+            </div>
+        </div>
+
+        <!-- Tabela PARTIDA -->
+        <div class="entity">
+            <div class="entity-header">PARTIDA</div>
+            <div class="attribute">
+                <span class="attr-name"><span class="pk">PK</span> <span class="attr-text pk-text">ID_Partida</span></span>
+                <span class="type">INT</span>
+            </div>
+            <div class="attribute">
+                <span class="attr-name">Data_Partida</span>
+                <span class="type">DATE</span>
+            </div>
+            <div class="attribute">
+                <span class="attr-name">Horario</span>
+                <span class="type">TIME</span>
+            </div>
+            <div class="attribute">
+                <span class="attr-name">Gols_Mandante</span>
+                <span class="type">INT</span>
+            </div>
+            <div class="attribute">
+                <span class="attr-name">Gols_Visitante</span>
+                <span class="type">INT</span>
+            </div>
+            <div class="attribute" style="background-color: #f4f9fc;">
+                <span class="attr-name"><span class="fk">FK</span> <span class="attr-text fk-text">ID_Estadio</span></span>
+                <span class="type">INT</span>
+            </div>
+            <div class="attribute" style="background-color: #f4f9fc;">
+                <span class="attr-name"><span class="fk">FK</span> <span class="attr-text fk-text">ID_Equipe_Mandante</span></span>
+                <span class="type">INT</span>
+            </div>
+            <div class="attribute" style="background-color: #f4f9fc;">
+                <span class="attr-name"><span class="fk">FK</span> <span class="attr-text fk-text">ID_Equipe_Visitante</span></span>
+                <span class="type">INT</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
