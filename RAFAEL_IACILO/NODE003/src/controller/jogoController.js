@@ -17,6 +17,9 @@ export function getByPrice(req,res){
     const min = req.params.min
     const max = req.params.max
 
+    //const min = req.query.min
+    //const max = req.query.max
+
     const jogos = readPriceBetween(min,max)
 
     if (jogos.length>0){
