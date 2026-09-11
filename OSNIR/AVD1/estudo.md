@@ -70,4 +70,34 @@ Um pacote IP viaja pela rede carregando endereços lógicos. O que acontece com 
         Endereço MAC de destino é substituido pelo MAC do próximo equipamento na rede
         Endereço IP NÃO sofre alteração
 
+Qual camada do modelo OSI é responsável pela formatação, criptografia e compressão dos dados antes de entregá-los à camada de aplicação?
+- R: Cama de Apresentação 
+    Camada de apresentação
+        Funções principais
+            Converte os formatos de daods da camada de aplicação em um padrão que todos leem 
+            Criptografia e descriptografia:  proteje a confiabilidade dis dados ao codificalos no envio e decodificalos na recepção
+            Compressão de dados: Reduz o tamanho dos dados antes do envio para economizar largura de banda e acelerar a trasmissão
+
+ Descreva o conceito de “Encapsulamento Reverso” (ou Desencapsulamento) que ocorre no Host receptor.
+ - R: é o processo inverso do encapsulamento, onde os dados subindo pelas camadas da arquitetura de rede (como o modelo OSI ou TCP/IP) têm seus cabeçalhos e rodapés removidos por cada camada até que apenas a mensagem original seja entregue à aplicação de destino
+
+    Encapsulamento Reverso - é o processo em redes de computadores em que um dispositivo receptor remove os cabeçalhos e rodapés adicionados aos dados pelas camadas inferiores de comunicação
+    
+Por que o modelo TCP/IP agrupa as camadas 5, 6 e 7 do modelo OSI em uma única camada de Aplicação?
+- R: porque ele prioriza a praticidade e a implementação real
+
+Qual protocolo da camada de Aplicação é responsável por traduzir nomes
+de domínio (como google.com) em endereços IP numéricos?
+- R: DNS
+    HTTP - Transmite páginas de interner par ao seu navegador
+    DHCP - Distribui endereços de IP automaticamente para os aparelhos da rede.
+    DNS - Distribui endereços de IP automaticamente para os aparelhos da rede.
+    FTP - Distribui endereços de IP automaticamente para os aparelhos da rede.  
+
+Parte 2 
+    ( 4, 8 ) Camada de Acesso à Rede
+    ( 3, 7 ) Camada de Internet
+    ( 2, 6 ) Camada de Transporte
+    ( 1, 5 ) Camada de Aplicação
+
 
