@@ -51,6 +51,11 @@ Troca de informação
                 query é usado depois da "?" ?q= Exemplo+pesquisa
                 body é o corpo, ela vai via post escondida
 
+===================================================================================================================
+Aula 5 - 
+
+Middleware - Fica no meio das rotas e controle, serve como uma validação de dados. Ele vai passar para a frente ou vai voltar para aonde veio
+
 
 
 

@@ -1,0 +1,134 @@
+[
+    {
+        "id": 1,
+        "nome": "minecraft",
+        "plataformas": ["xbox one", "ps5", "pc"],
+        "preco": 100.99
+    },
+    {
+        "id": 2,
+        "nome": "GTA V",
+        "plataformas": ["xbox one", "ps5"],
+        "preco": 368.50
+    },
+    {
+        "id": 3,
+        "nome": "Red Dead Redemption 2",
+        "plataformas": ["xbox one", "ps5", "pc"],
+        "preco": 299.90
+    },
+    {
+        "id": 4,
+        "nome": "FIFA 25",
+        "plataformas": ["ps5", "xbox one", "pc"],
+        "preco": 349.99
+    },
+    {
+        "id": 5,
+        "nome": "Call of Duty Modern Warfare III",
+        "plataformas": ["ps5", "xbox one", "pc"],
+        "preco": 379.90
+    },
+    {
+        "id": 6,
+        "nome": "The Witcher 3",
+        "plataformas": ["ps5", "xbox one", "pc"],
+        "preco": 89.99
+    },
+    {
+        "id": 7,
+        "nome": "Cyberpunk 2077",
+        "plataformas": ["ps5", "xbox one", "pc"],
+        "preco": 249.99
+    },
+    {
+        "id": 8,
+        "nome": "Elden Ring",
+        "plataformas": ["ps5", "xbox one", "pc"],
+        "preco": 299.99
+    },
+    {
+        "id": 9,
+        "nome": "God of War Ragnarök",
+        "plataformas": ["ps5", "pc"],
+        "preco": 299.90
+    },
+    {
+        "id": 10,
+        "nome": "Horizon Forbidden West",
+        "plataformas": ["ps5", "pc"],
+        "preco": 279.90
+    },
+    {
+        "id": 11,
+        "nome": "Spider-Man 2",
+        "plataformas": ["ps5"],
+        "preco": 349.90
+    },
+    {
+        "id": 12,
+        "nome": "Forza Horizon 5",
+        "plataformas": ["xbox one", "pc"],
+        "preco": 199.90
+    },
+    {
+        "id": 13,
+        "nome": "Halo Infinite",
+        "plataformas": ["xbox one", "pc"],
+        "preco": 189.90
+    },
+    {
+        "id": 14,
+        "nome": "Resident Evil 4 Remake",
+        "plataformas": ["ps5", "xbox one", "pc"],
+        "preco": 229.90
+    },
+    {
+        "id": 15,
+        "nome": "Assassin's Creed Mirage",
+        "plataformas": ["ps5", "xbox one", "pc"],
+        "preco": 249.90
+    },
+    {
+        "id": 16,
+        "nome": "Starfield",
+        "plataformas": ["xbox one", "pc"],
+        "preco": 299.90
+    },
+    {
+        "id": 17,
+        "nome": "Diablo IV",
+        "plataformas": ["ps5", "xbox one", "pc"],
+        "preco": 289.90
+    },
+    {
+        "id": 18,
+        "nome": "Baldur's Gate 3",
+        "plataformas": ["ps5", "pc"],
+        "preco": 219.90
+    },
+    {
+        "id": 19,
+        "nome": "Mortal Kombat 1",
+        "plataformas": ["ps5", "xbox one", "pc"],
+        "preco": 249.99
+    },
+    {
+        "id": 20,
+        "nome": "Street Fighter 6",
+        "plataformas": ["ps5", "xbox one", "pc"],
+        "preco": 199.90
+    },
+    {
+        "id": 21,
+        "nome": "Hogwarts Legacy",
+        "plataformas": ["ps5", "xbox one", "pc"],
+        "preco": 259.90
+    },
+    {
+        "id": 22,
+        "nome": "Monster Hunter Rise",
+        "plataformas": ["ps5", "xbox one", "pc"],
+        "preco": 149.90
+    }
+]
