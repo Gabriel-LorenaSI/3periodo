@@ -1,0 +1,2 @@
+Erros https:
+https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status

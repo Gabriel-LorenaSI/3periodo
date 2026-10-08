@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(192, 127, 49);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title{
+    background-color: bisque;
+    padding: 10%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+}
+
+.card{
+    background-color:bisque;
+    width: 250px;
+    padding: 1% 10% 5% 10%;
+    text-align: center;
+    border-radius: 8px;
+    h1 {
+        background-color: burlywood;
+        padding: 12px;
+        margin-top: 5px;
+        top: 10px;
+        border-radius: 8px 8px 0px 0px;
+
+    }
+    .preço{
+        font-weight: 800;
+        font-size: 18px;
+        color: indianred;
+    }
+    .preço:before{
+        content: "R$: ";
+    }
+}
+
