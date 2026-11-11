@@ -1,0 +1,14 @@
+AUTENTICAÇÃO: Determinar que o usuario exisite e está correto na base de dados
+
+Autorização: Determianar, autorizar o usuario ja logado, a acessar somente dados que o competem
+
+    É necessário fazer um plano de acesso e permissões
+        acesso: Aluno
+            Ver suas notas 
+            Alterar sua senha
+            inserir um comentário
+        
+        acesso: Admin
+            inserir novos alunos 
+            alterar dados de aluno
+            desativar aluno
